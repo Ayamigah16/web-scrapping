@@ -15,6 +15,7 @@ const apiURL = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
 request.get(apiURL, (error, reponse, body) => {
     if (error) {
         console.error(error);
+        return;
     }
 
     // parse the JSON respons body

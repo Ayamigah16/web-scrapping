@@ -9,7 +9,7 @@ fs.readFile(filepath, 'utf-8', (error, data) => {
     // print error message if occurs
     if (error) {
         console.error(error);
-        return
+        return;
     }
     
     // print the content of the file

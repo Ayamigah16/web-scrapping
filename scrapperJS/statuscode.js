@@ -13,6 +13,7 @@ request.get(url, (error, response) => {
     // display error if occurs
     if (error) {
         console.error(error);
+        return;
     }
 
     // print the status code
