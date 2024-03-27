@@ -35,14 +35,16 @@ request.get(apiUrl, (error, response, body) => {
                         }
                     });
                 });
+
                 const characterData = JSON.parse(characterResponse);
                 characterNames.push(characterData.name);
             } catch (error) {
                 console.error(error);
             }
         }
+        
         characterNames.forEach(name => console.log(name))
     };
-    
+
     fetchCharacters();
 })
